@@ -31,11 +31,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+  padding: 30px;
 }
 
 ul li {
@@ -45,7 +44,7 @@ ul li {
 
 ul li a {
   position: relative;
-  font-size: 4em;
+  font-size: 2em;
   text-decoration: none;
   line-height: 1em;
   letter-spacing: 2px;
@@ -63,7 +62,7 @@ ul li a:before {
   -webkit-transition: all ease-in-out 600ms;
   transition: all ease-in-out 600ms;
   overflow: hidden;
-  border-right: 8px solid var(--color);
+  border-right: 4px solid var(--color);
   -webkit-text-stroke: 1px var(--color);
 }
 
