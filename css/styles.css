@@ -54,3 +54,17 @@ ul li a {
   color: transparent;
   -webkit-text-stroke: 1px #fff5;
 }
+
+ul li a:before {
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  width: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+}
+
+ul li a:hover:before {
+  width: 100%;
+}

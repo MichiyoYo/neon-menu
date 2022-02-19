@@ -18,6 +18,20 @@ ul {
       font-weight: 800;
       color: transparent;
       -webkit-text-stroke: 1px #fff5;
+
+      &:before {
+        content: attr(data-text);
+        position: absolute;
+        color: #fff;
+        width: 0;
+        transition: 1s;
+        overflow: hidden;
+      }
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
     }
   }
 }
