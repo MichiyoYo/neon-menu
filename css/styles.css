@@ -63,8 +63,10 @@ ul li a:before {
   -webkit-transition: 1s;
   transition: 1s;
   overflow: hidden;
+  border-right: 8px solid #fff;
 }
 
 ul li a:hover:before {
   width: 100%;
+  -webkit-text-stroke: 1px #fff;
 }
